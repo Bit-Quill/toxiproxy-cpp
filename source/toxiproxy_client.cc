@@ -5,6 +5,8 @@
 namespace TOXIPROXY {
 TOXIPROXY_CLIENT::TOXIPROXY_CLIENT() : TOXIPROXY_CLIENT{"localhost", 8474} {}
 
+TOXIPROXY_CLIENT::TOXIPROXY_CLIENT(std::string host) : TOXIPROXY_CLIENT{host, 8474} {}
+
 TOXIPROXY_CLIENT::TOXIPROXY_CLIENT(std::string host, int port) : TOXIPROXY_CLIENT{"http", std::move(host), port} {}
 
 TOXIPROXY_CLIENT::TOXIPROXY_CLIENT(std::string protocol, std::string host, int port) {

@@ -12,6 +12,7 @@ namespace TOXIPROXY {
 class TOXIPROXY_CLIENT {
  public:
   TOXIPROXY_CLIENT();
+  TOXIPROXY_CLIENT(std::string host);
   TOXIPROXY_CLIENT(std::string host, int port);
   TOXIPROXY_CLIENT(std::string protocol, std::string host, int port);
   ~TOXIPROXY_CLIENT() = default;
